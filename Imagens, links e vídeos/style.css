@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(14, 14, 14);
+}
+
+h1{
+    text-align: center;
+    color: azure;
+}
+
+p{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+a{
+    color: azure;
+}
