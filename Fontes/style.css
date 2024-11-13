@@ -1,12 +1,39 @@
 @charset "UTF-8";
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Work sans', Arial, Helvetica, sans-serif;
+
+    /*Recomendado trabalhar com 'em' e 'px'*/
+
+    /*px = Tamanho da fonte em pixels*/
+
+    /*Tamanho da fonte em relação ao tamanho da fonte do elemento pai*/
     font-size: 1em;
 }
 
-/*Recomendado trabalhar com 'em' e 'px'*/
+h1 {
+    font-size: 3em;
 
-/*px = Tamanho da fonte em pixels*/
+    /*Definindo peso da fonte*/
+    font-weight: bolder;
 
-/*Tamanho da fonte em relação ao tamanho da fonte do elemento pai*/
+    /*Definindo estilo da fonte*/
+    font-style: italic;
+
+    /*Sublinhando fonte*/
+    text-decoration: underline;
+}
+
+h2 {
+    /*Configurando fonte de maneira simplificada*/
+    /*font-style -> font-weight -> font-size -> font-family*/
+    font: italic bold 2em 'Work Sans', sans-serif;
+}
+
+h3 {
+    /*Configurando sem necessariamente botar tods as configurações*/
+    font: lighter 2em 'Work Sans, sans-serif';
+}
