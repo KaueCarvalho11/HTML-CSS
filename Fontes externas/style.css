@@ -2,6 +2,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
 
+
+/*Trazendo fonte externa e a configurando*/
+@font-face {
+    font-family: love;
+    src: url(fontes/BeautyDisplay.otf) format('opentype'), url(fontes/BeautyDisplayRegular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    /*
+    Tipos de formato
+    - opentype(otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-aat (Apple Advanced typography
+    - svg
+    */
+}
+
 body {
     font-family: "Edu AU VIC WA NT Guides", cursive;
 }
@@ -15,5 +32,11 @@ h2 {
     font-style: italic;
     text-decoration: underline;
     font-weight: lighter;
+}
+
+h3 {
+    font-family: love, 'serif';
+    font-size: 3em;
+    font-weight: normal;
 
 }
