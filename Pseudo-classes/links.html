@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : pseudo-class
+            :: pseudo-element
+            > = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        /*Personalizando o link*/
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /*Personalizando o link quando já visitado*/
+        a:visited {
+            color: blueviolet;
+        }
+
+        /*Personalizando o link quando o usuário passar o mouse em cima dele*/
+        a:hover {
+            color: rgb(58, 58, 240);
+            text-decoration: underline;
+        }
+
+        /*Personalizando o link no momento em que é clicado nele*/
+        a:active {
+            color: red;
+        }
+
+        /*Personalizando link com identificador 'especial', de forma que, antes dele, haja um emogi*/
+        #especial::before {
+            content: "\1F517";
+
+        }
+
+        /*Personalizando elementos da classe 'link' de forma que, após eles, seja adicionado '(link)'*/
+        .link::after {
+            content: ' (link)';
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/KaueCarvalho11" class="link" target="_blank" rel="external">Github</a></li>
+        <li><a href="https://www.instagram.com/kaue_carvalho11_/?theme=dark" id="especial" class="link" target="_blank"
+                rel="external">Instagram</a></li>
+    </ul>
+
+</body>
+
+</html>
