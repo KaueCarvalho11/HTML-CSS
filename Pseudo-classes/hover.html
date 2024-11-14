@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+
+        div > p{
+            /*Escondendo conteúdo do parágrafo dentro da div*/
+            display: none;
+        }
+
+        div:hover > p{
+            /*Definindo que o conteúdo do parágrafo dentro da div irá aparecer quando passar o mouse seobre ela*/
+            display: block;
+            background-color: gray;
+            color: white;
+            width: 110px;
+            
+        }
+
+        div:hover{
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <div>
+        Passe o mouse aqui
+        <p>Texto escondido</p>
+    </div>
+    
+</body>
+</html>

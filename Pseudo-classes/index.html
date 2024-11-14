@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-image: linear-gradient(to bottom, gray, rgb(85, 84, 84));
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.539);
+            width: 200px;
+            height: 200px;
+
+            /*border: Largura estilo cor*/
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        /*Identificar pseudo-classe com ':'*/
+
+        /*:hover: Aplica estilos quando o usuário passa o mouse sobre um elemento.*/
+        div:hover{
+            background-image: linear-gradient(to bottom, yellow, rgb(179, 179, 0));
+            text-shadow: 2px 2px 3px black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+</body>
+
+</html>
