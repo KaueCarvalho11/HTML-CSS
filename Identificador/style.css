@@ -1,24 +1,39 @@
 @charset "UTF-8";
 
 /*
-HTML = id\ CSS = #
-HTML = class\ CSS = .
+HTML = id\ CSS = # (Só pode um elemento por página)
+HTML = class\ CSS = . (Pode vários elementos )
 */
 
-body{
+body {
     background-image: linear-gradient(to right, #00E3CC, #32A89C);
 }
 
-h1{
+h1 {
     color: rgb(4, 4, 95);
 }
 
-#principal{
+#principal {
     text-align: center;
-    background-color: rgb(1, 35, 40);
     color: white;
 }
 
-h2{
+h2 {
     color: rgb(59, 58, 58);
+}
+
+.basico {
+    color: rgb(1, 110, 1);
+}
+
+.intermediario {
+    color: rgb(238, 255, 3);
+}
+
+.avancado {
+    color: red;
+}
+
+.destaque {
+    background-color: rgba(212, 255, 0, 0.581);
 }
