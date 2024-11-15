@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body{
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+nav{
+    background-color: rgb(92, 92, 92);
+    padding: 3px;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    color: rgb(202, 202, 202);
+}
+
+nav > a:active{
+    color: rgb(161, 161, 2);
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+article{
+    background-color: rgb(162, 161, 161);
+    padding: 5px;
+}
+
+article > aside{
+    background-color: rgb(124, 122, 122);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    padding: 15px;
+    margin: 0px;
+}
+
