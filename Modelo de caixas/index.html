@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de caixas</title>
     <style>
-        h1{
+        h1 {
             background-color: gray;
             width: 300px;
             height: 300px;
+
             border-width: 10px;
             border-style: solid;
             border-color: darkgreen;
 
-            /*Medida do padding é dividido em 4 direções: cima, direita, baixo e esquerda*/
+            /*border poderia ter sido simplificado para:
+            border: 10px solid darkgreen;
+            border: width style color
+            */
+
+
+            /* Medida do padding é dividido em 4 direções: cima, direita, baixo e esquerda */
             padding-top: 10px;
             padding-right: 10px;
             padding-bottom: 10px;
             padding-left: 10px;
+
+            /* padding poderia ter sido simplificado para:
+            padding: 10px 10px 10px 10px;
+            padding: top right bottom left
+                        ou
+            padding: 10px;
+            Isso porque todas as medidas são iguais, assim, uma declaração se aplica a todas
+            */
+
+            margin-top: 40px;
+            margin-right: auto;
+            margin-bottom: 40px;
+            margin-left: auto;
+
+            /*margin poderia ter sido simplificado para:
+            margin: 40px auto 40px auto
+                    ou
+            margin: 40px auto
+            Isso porque com 2 medidas informadas, a primeira se refere a parte de cima e a de baixo, e a segunda se refere a dos lados
+            */
+
+            outline-width: 3px;
+            outline-style: double;
+            outline-color: red;
+
+            /*outline poderia ter sido simplficado para:
+            outline: 3px double red;
+            outline: width style color;
             
+            */
+
         }
 
-        a{
+        a {
             border-width: 10px;
             border-style: solid;
             border-color: blue;
@@ -31,12 +69,23 @@
             padding-bottom: 10px;
             padding-left: 10px;
         }
+
+        /*Também é possível:
+
+        Transformar h1 'box-level' em 'inline' com: display: inline
+
+        Transformar link 'inline' em 'box-level' com: display: box-level
+
+        Display: inline-block = Tem características de ambas, ou seja, apesar de ser online, é possível modificar características como altura e largura
+        */
     </style>
 </head>
+
 <body>
-      <!--Ao inspecionar, elemento com a configuração 'display: block' é box-level-->
+    <!--Ao inspecionar, elemento com a configuração 'display: block' é box-level-->
     <h1>Exemplo de caixa box-level</h1>
-    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level.</a>Vamos ver como tudo isso funciona.</p>
-    
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas
+            inline-level.</a>Vamos ver como tudo isso funciona.</p>
 </body>
+
 </html>
