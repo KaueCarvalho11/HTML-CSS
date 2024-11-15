@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: center;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent;
+
+    border-image-source: url('img/borda.png');
+
+    /* border-image-slice define quantos pixels de cada borda da imagem serão cortados*/
+    border-image-slice: 27;
+    border-image-repeat: repeat;
+
+    /*Poderia ter sido simplificado para: 
+    border-image: url('img/borda.png') 27 repeat)
+    */
+
+}
