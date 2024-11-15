@@ -11,12 +11,18 @@ header {
     padding: 10px;
     margin: 10px;
 
+    /*1 valor informado: Arredondamento em píxels é aplicado a todos os vértices*/
+    border-radius: 10px;
+
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.257);
+
 }
 
 nav {
     background-color: rgb(92, 92, 92);
     padding: 3px;
-    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.418);}
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.418);
+}
 
 nav>a {
     color: white;
@@ -37,13 +43,23 @@ main {
     background-color: white;
     padding: 10px;
     margin: 10px;
+
+    /* border-radius: top-left top-right bottom-right bottom-left*/
+    border-radius: 10px 20px 30px 40px;
 }
 
 article {
     background-color: rgb(162, 161, 161);
     padding: 5px;
+
+    /*Sombra: horizontal vertical embaçamento espalhamento cor */
     box-shadow: 3px 4px 5px 1px rgba(0, 0, 0, 0.477);
-    /*Sombra: horizontal vertical espalhamento cor */
+
+    /*
+    Em caso de apenas 2 valores informados, as modificações são:
+    border-radius: top-left/bottom-right    top-right/bottom-left
+    */
+    border-radius: 15px 0px;
 }
 
 article>aside {
@@ -57,4 +73,15 @@ footer {
     margin-top: 5px;
     padding: 15px;
     margin: 0px;
+}
+
+#circulo {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    /*50% também funcionaria*/
+
+    margin: 10px auto;
+
 }
