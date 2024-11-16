@@ -2,8 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
 
+@font-face {
+    font-family: android;
+    src: url(font/idroid.otf) format('opentype');
+}
+
 body{
     margin: 0px;
+    background-color: #84E1AD;
    
 }
 
@@ -13,13 +19,14 @@ header{
     text-align: center;
     color: white;
     padding-bottom: 20px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.651);
     
 }
 
 header>h1{
     font-size: 40px;
     margin: 0px;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 10px;
     font-family: "Bebas Neue", serif;
     font-weight: normal;
@@ -28,10 +35,38 @@ header>h1{
 }
 header>p{
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.662);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.662);
+    margin-bottom: 40px;
+    
+}
+
+nav{
+    text-align: left;
+    
+}
+
+nav>a{
+    color: white;
+    padding-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: white;
+    width: 68%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 20px;
+    box-shadow: 0px 1px 5px 1px #00000087;
 }
 
 
 
-      
+main>article>h1{
+    margin-top: 0px;
+    font-family: android;
+    color: #185A36;
 
+}
