@@ -37,6 +37,7 @@ header>p{
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.662);
     margin-bottom: 40px;
+    text-align: center;
     
 }
 
@@ -55,18 +56,65 @@ nav>a{
 
 main {
     background-color: white;
-    width: 68%;
+    width: 78%;
     margin: 0 auto;
     padding-top: 30px;
     padding-left: 20px;
+    padding-right: 20px;
     box-shadow: 0px 1px 5px 1px #00000087;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0px 0px 10px 10px;
 }
-
-
 
 main>article>h1{
     margin-top: 0px;
     font-family: android;
     color: #185A36;
+    font-size: 32px;
+}
 
+
+main>article>h2{
+    font-family: android;
+    color: #185A36;
+    background-image: linear-gradient(to right, #CBF2DC, white);
+    padding-left:10px;
+
+}
+
+p{
+    line-height: 1.5;
+    text-indent: 20px;
+    text-align: justify;
+    padding-right: 20px;   
+}
+
+strong{
+    color:#185A36;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #1A5C38;
+}
+
+.especial::after{
+    content: "\1F517";
+}
+
+picture{
+    display: block;
+    text-align: center;
+}
+
+picture>img{
+    max-width: 100%;
+}
+ 
+iframe{
+    width: 100%;
+    height: auto;
+    min-height: 568.375px;
+    margin: 20px 0;
 }
