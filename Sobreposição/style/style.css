@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+img {
+
+    /* 100% da largura da viewport */
+    width: 100vw;
+
+    /* 100% da altura da viewport*/
+    height: 100vh;
+
+    /* Mantém a proporção da imagem */
+    object-fit: cover;
+
+    /*Imagem passa a ser um bloco independente, sem espaço extra na borda inferior*/
+    display: block;
+}
