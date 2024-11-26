@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+
+    <style>
+        #container {
+
+            /*
+            Quando se utiliza position: relative em um elemento, ele se torna o contêiner de referência para os elementos filhos posicionados de forma absoluta (position: absolute).
+
+            Isso significa que, para centralizar ou alinhar o elemento #conteudo dentro do #container, as coordenadas usadas no posicionamento absoluto do #conteudo serão relativas ao contêiner, e não ao documento inteiro.
+            */
+            position: relative;
+            background-color: purple;
+            height: 100vh;
+            background-image: url(img/target001.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100%;
+        }
+
+        #conteudo {
+
+            /* Posiciona em relação ao #container */
+            position: absolute;
+            background-color: yellow;
+            height: 30%;
+            width: 30%;
+            background-image: url(img/target001.png);
+            background-position: center center;
+            background-size: 100%;
+            top: 50%;
+            left: 50%;
+
+            /* move elemento ao longo dos eixos horizontal (x) e vertical (y)*/
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+
+</body>
+
+</html>
