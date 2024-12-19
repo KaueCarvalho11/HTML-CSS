@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas simples</title>
+
+    <style>
+        table {
+            width: 400px;
+
+            /*Eliminando espaçamento entre as caixas*/
+            border-collapse: collapse;
+        }
+
+        tr {
+            background-color: turquoise;
+        }
+
+        #terceira {
+            background-color: brown;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #especial {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Tag para delimitar tabela-->
+    <table>
+
+        <!--(Table row) Tag para adicionar linha de uma tabela-->
+        <tr>
+            <!--(Table data) Tag para adicionar dados as linhas da tabela-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+
+        <tr>
+            <td>A2</td>
+            <td id="especial">B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr id="terceira">
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
