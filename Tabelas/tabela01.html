@@ -9,6 +9,7 @@
     <style>
         table {
             width: 400px;
+            height: 400px;
 
             /*Eliminando espaçamento entre as caixas*/
             border-collapse: collapse;
@@ -25,11 +26,25 @@
         td {
             border: 1px solid black;
             padding: 10px;
-            text-align: center;
+            vertical-align: top;
         }
 
         #especial {
             background-color: yellow;
+        }
+
+        #A1{
+            text-align: left;
+            vertical-align: bottom;
+        }
+
+        #B1{
+            text-align: right;
+            vertical-align: top;
+        }
+
+        #C1{
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -42,9 +57,9 @@
         <!--(Table row) Tag para adicionar linha de uma tabela-->
         <tr>
             <!--(Table data) Tag para adicionar dados as linhas da tabela-->
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
+            <td id="A1">A1</td>
+            <td id="B1">B1</td>
+            <td id="C1">C1</td>
         </tr>
 
         <tr>
