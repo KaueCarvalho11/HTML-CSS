@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        thead,
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+
+        <!--Cabeça da tabela-->
+        <thead>
+            <tr>
+                <!--th para se referir a cabeçalhos/títulos-->
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+
+        <!--Corpo da tabela-->
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.843</td>
+            </tr>
+        </tbody>
+
+        <!--Pé da tabela-->
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td class="num"><strong>84.352.682</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
