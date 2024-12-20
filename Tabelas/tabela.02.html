@@ -7,19 +7,25 @@
     <title>Tabelas grandes</title>
 
     <style>
+
+        caption{
+            font-size: 1.5em;
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
         table {
             border-collapse: collapse;
             width: 500px;
         }
 
-        thead,
-        tfoot {
+        thead, tfoot {
             background-color: gray;
             color: white;
         }
 
-        th,
-        td {
+        th, td {
             border: 1px solid black;
             padding: 10px;
         }
@@ -27,19 +33,37 @@
         .num {
             text-align: right;
         }
+
+        tbody > tr:nth-child(odd){ /*Ou 2n -1, ambos se referem à células ímpares da tabela*/
+            background-color: lightgray;
+
+        }
+
+        tbody > tr:nth-child(even){ /* Ou 2n, ambos se referem à células pares da tabela*/
+            background-color: azure;
+        }
+
     </style>
 </head>
 
 <body>
-
+    
     <table>
+
+         <!--Legenda da tabela-->
+    <caption>
+        População das Unidades Federativas
+    </caption>
 
         <!--Cabeça da tabela-->
         <thead>
             <tr>
-                <!--th para se referir a cabeçalhos/títulos-->
-                <th>Estado</th>
-                <th>População</th>
+                <!--
+                th para se referir a cabeçalhos/títulos
+                scope="col" para indicar que é o título de uma coluna
+                -->
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -59,13 +83,20 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17.264.843</td>
             </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
         </tbody>
 
         <!--Pé da tabela-->
         <tfoot>
             <tr>
-                <th>Total</th>
-                <td class="num"><strong>84.352.682</strong></td>
+
+                <!--scope="row" para indicar que é o título de uma linha-->
+                <th scope="row">Total</th>
+                <td class="num"><strong>000.000.000</strong></td>
             </tr>
         </tfoot>
     </table>
