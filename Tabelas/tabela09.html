@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+
+        #destaque {
+            background-color: yellow;
+        }
+
+        .destacado {
+            background-color: springgreen;
+        }
+
+        .vermelho {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+
+        <colgroup>
+
+            <!--Usando Span para que o destaque se aplique a 2 colunas-->
+            <col class="destacado" span="2">
+
+            <!--Nesse caso, como o span fez a configuração da primeira coluna se aplicar a primeira e a segunda, esse col da classe vermelho corresponderá a terceira coluna-->
+            <col class="vermelho">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Bob Eslobabona</td>
+                <td>M</td>
+                <td>26</td>
+                <td>Jogador de basquete</td>
+            </tr>
+
+            <tr id="destaque">
+                <td>Antedegemom da Silva</td>
+                <td>M</td>
+                <td>58</td>
+                <td>Radialista</td>
+            </tr>
+
+            <tr>
+                <td>Magic Johnson</td>
+                <td>M</td>
+                <td>76</td>
+                <td>Ator</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

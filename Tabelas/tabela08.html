@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+
+        #destaque {
+            background-color: yellow;
+        }
+
+        .destacado {
+            background-color: springgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <table>
+
+        <colgroup>
+
+            <!-- 1º col corresponde a primeira coluna, 2º col corresponde a segunda, e assim sucessivamente.-->
+            <col class="destacado">
+            <col class="">
+            <col class="destacado">
+            <col>
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Bob Eslobabona</td>
+                <td>M</td>
+                <td>26</td>
+                <td>Jogador de basquete</td>
+            </tr>
+
+            <tr id="destaque">
+                <td>Antedegemom da Silva</td>
+                <td>M</td>
+                <td>58</td>
+                <td>Radialista</td>
+            </tr>
+
+            <tr>
+                <td>Magic Johnson</td>
+                <td>M</td>
+                <td>76</td>
+                <td>Ator</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
