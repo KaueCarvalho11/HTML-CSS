@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .container {
+
+            /*Resolvendo rolagem no eixo x, dessa forma, apenas a tabela irá rolar*/
+            overflow-x: auto;
+
+            /*Em caso de rolagem no eixo y, para que apenas a tabela rolasse, bastaria usar "overflow-y:auto ;"*/
+
+            /*Em caso de rolagem em ambos os eixos, para que apenas a tabela rolasse, bastaria usar "overflow: auto;"*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tabela responsiva</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam dicta asperiores soluta nulla quo maiores ipsum
+        eum? Ipsum dolore architecto sint odio quis temporibus, eaque, laudantium maiores, minus quos excepturi.</p>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Janeiro</th>
+                    <th>Fevereiro</th>
+                    <th>Março</th>
+                    <th>Abril</th>
+                    <th>Maio</th>
+                    <th>Junho</th>
+                    <th>Julho</th>
+                    <th>Agosto</th>
+                    <th>Setembro</th>
+                    <th>Outubro</th>
+                    <th>Novembro</th>
+                    <th>Dezembro</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+</body>
+
+</html>
